@@ -1,0 +1,1 @@
+fastmcp run task_server.py
