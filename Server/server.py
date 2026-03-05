@@ -140,4 +140,5 @@ Use the tasks://all resource to access the complete task list."""
 
 # ------ Run the server ------
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run()             # run on stdio for local servers
+    # mcp.run(transport="http", port=8000)  # run http for remote access
