@@ -139,6 +139,11 @@ def task_summary_prompt() -> str:
 Use the tasks://all resource to access the complete task list."""
 
 # ------ Run the server ------
+
+# Run on stdio for local servers
 if __name__ == "__main__":
-    mcp.run()             # run on stdio for local servers
-    # mcp.run(transport="http", port=8000)  # run http for remote access
+    mcp.run()             
+
+# Run on http for remote access
+#if __name__ == "__main__":
+#    mcp.run(transport="http", port=8000)
